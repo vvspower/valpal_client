@@ -2,7 +2,10 @@ $base-color : #302F3D
 $system-gray : #797991
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap')
-    
+
+*
+    font-family: 'Poppins', sans-serif
+
     
 .navbar
     font-family: 'Poppins', sans-serif
@@ -28,13 +31,13 @@ $system-gray : #797991
     margin-right: 20px
     align-items: center
 
-.menu h1
+.button
     color: white
     background-color: #9C43F8
     padding: 5px 15px
     border-radius: 16px
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.1)
-    cursor: pointer
+    // cursor: pointer
 
 // MORE MENU ITEMS
 
@@ -66,11 +69,12 @@ $system-gray : #797991
 
 .notifmenu h4 
     font-size: 10px
-    padding: 5px 10px
+    padding: 10px 10px
     color: white
     cursor: not-allowed
     border-bottom: 1px solid #4F4E60
     margin-left: 10px
+
 
 .notifmenu h3
     font-size: 10px
@@ -79,7 +83,6 @@ $system-gray : #797991
 
 
 .notifmenu h1
-    
     padding: 4px 20px
     font-size: 14px
     
@@ -104,6 +107,120 @@ $system-gray : #797991
     margin-top: 10px
     display: flex
     align-items: center
+
+
+// messages
+
+.messages
+    width: 400px
+    border-bottom: 1px solid #4F4E60
+    padding-bottom: 10px
+    margin-left: 10px
+
+.messages h5
+    color: $system-gray
+    margin: 0
+    padding: 0
+    margin-left: 20px
+    cursor: pointer
+
+
+    
+.messages h1
+    padding: 2px 2px
+    // padding-bottom: 10px
+
+.messages div 
+    gap: 10px
+    margin-top: 2px
+    display: flex
+    align-items: center
+    margin-left: 20px
+    margin-bottom: 5px
+    margin-top: 10px
+    // justify-content: center
+    
+// User Menu
+
+.usermenu
+    width: 240px
+    padding: 10px
+
+.header
+    display: flex
+    align-items: center
+    gap: 10px
+    margin-bottom: 30px
+    cursor: pointer
+    
+
+.header h1
+    font-size: 16px
+    font-family: 'Poppins', sans-serif
+    
+
+.details
+    display: flex
+    gap: 20px
+    justify-content: space-evenly
+    margin-bottom: 30px
+
+.details div
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.details h1
+    font-size: 18px
+    font-family: 'Poppins', sans-serif
+
+
+.details h2
+    font-size: 12px
+    font-family: 'Poppins', sans-serif
+    color: #A2A1C6
+
+.info
+    display: flex
+    justify-content: space-between
+
+.info div
+    display: flex
+    gap: 10px
+    &:nth-child(2) :hover
+        cursor: pointer
+
+        
+
+
+
+.info h1
+    font-size: 16px
+    // font-family: 'Poppins', sans-serif
+
+// JIOIN
+.join
+    padding: 10px
+    background-color: #120E1B
+    margin-top: 40px
+    border-radius: 8px
+    cursor: pointer
     
 
 
+.join h1
+    font-size: 16px
+    
+
+
+.settings
+    display: flex
+    align-items: center
+    cursor: pointer
+    gap: 8px
+    margin-top: 20px
+
+.settings h1
+    font-size: 14px
+    
