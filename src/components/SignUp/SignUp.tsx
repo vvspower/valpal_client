@@ -7,6 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import api from "../instance";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -26,12 +27,12 @@ interface IResponse {
   data : IData
 }
 
-const api: AxiosInstance = axios.create({
-  baseURL: "https://valpal-python.herokuapp.com/",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+// const api: AxiosInstance = axios.create({
+//   baseURL: "https://valpal-python.herokuapp.com/",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// });
 
 function Copyright(props: any) {
   return (
